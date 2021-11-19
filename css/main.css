@@ -66,7 +66,7 @@ a:hover{
 @media only screen and (max-width: 991px) { /* MOBILE */
   body{
     min-height: 100vh;
-    background: url(../images/RSU2015-04.jpg);
+    background: url(../images/RSU2015-04.webp);
     background-size: auto 100vh !important;
     background-repeat: no-repeat !important;
     background-position: center;
@@ -76,7 +76,7 @@ a:hover{
 @media only screen and (min-width: 992px) { /* PC */
   body{
     min-height: 100vh;
-    background: url(../images/RSU2015-04.jpg);
+    background: url(../images/RSU2015-04.webp);
     background-size: 100% auto !important;
     background-repeat: no-repeat !important;
     background-position: center;
@@ -86,7 +86,7 @@ a:hover{
 @media only screen and (width: 1024px) { /* IPAD PRO */
   body{
     min-height: 100vh;
-    background: url(../images/RSU2015-04.jpg);
+    background: url(../images/RSU2015-04.webp);
     background-size: auto 100vh !important;
     background-repeat: no-repeat !important;
     background-position: center;
