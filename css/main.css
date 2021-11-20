@@ -98,6 +98,9 @@ a:hover{
     background-position: center;
     padding: 15px;
   }
+  .alt{
+    margin-right: 40px;
+  }
 }
 @media only screen and (width: 1024px) { /* IPAD PRO */
   body{
@@ -107,5 +110,10 @@ a:hover{
     background-repeat: no-repeat !important;
     background-position: center;
     padding: 15px;
+  }
+}
+@media only screen and (width: 768px) { /* IPAD */
+  .alt{
+    margin-right: 20px;
   }
 }
