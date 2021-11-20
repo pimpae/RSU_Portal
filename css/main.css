@@ -63,6 +63,22 @@ a:hover{
   -webkit-backdrop-filter: blur(20px);
   padding: 5px 15px 15px;
 }
+.alt{
+  height: 24px !important;
+  width: 24px !important;
+  border-radius: 100% !important;
+  background-color: #FF0000;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #fff !important;
+  font-size: 13px;
+  padding-top: 2px;
+  text-align: center !important;
+}
+
+
+
 @media only screen and (max-width: 991px) { /* MOBILE */
   body{
     min-height: 100vh;
