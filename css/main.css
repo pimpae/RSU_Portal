@@ -100,25 +100,17 @@ body{
     background-repeat: no-repeat !important;
     background-position: center center;
     padding: 15px;
-  }  
-  .backdrop{
-    padding-left: 2px;
-    padding-right: 2px;
-  }
+  }   
   .col-3{
     padding-left: 5px;
     padding-right: 5px;
-  }
-  .main-app{
-    padding-left: 5px;
-    padding-right: 5px;
-  }
+  } 
   .fix-bot{
     position: relative !important;
     bottom: unset !important;
     left: unset !important;   
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
   } 
   
   .fix-bot{
