@@ -1,8 +1,15 @@
-
+@font-face{
+  font-family: RSU_Text_Bold;
+  src: url(../fonts/RSU_Text_Bold.ttf);
+  font-style: normal;
+  font-variant:initial;
+} 
 a:hover{
   text-decoration: none;
 }
-
+body{ 
+  font-family: RSU_Text_Bold;
+} 
 .time{
   color: #fff;
 }
@@ -31,21 +38,26 @@ a:hover{
   background-size: 60px 60px !important;
   background-repeat: no-repeat !important;
   background-position: center;
-  border-radius: 10px; 
+  border-radius: 14px; 
   transition: .33s all ease-out; 
   display: block;
   margin: auto;
 }
 .app p{ 
-  color: #fff;
+  color: #000;
   text-transform: capitalize;
   margin-bottom: 5px;
-  margin-top: 2px;
-  font-size: 14px;
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 16px;  
 }
 .app:active div{ 
   transform: scale(1.1);
 }
+.app:hover div{ 
+  transform: scale(1.1);
+}
+
 
 .fix-bot{
   position: fixed;
@@ -75,6 +87,7 @@ a:hover{
   font-size: 13px;
   padding-top: 2px;
   text-align: center !important;
+  z-index: 9; 
 }
 
 
@@ -83,11 +96,23 @@ a:hover{
   body{
     min-height: 100vh;
     background: url(../images/RSU2015-04.webp);
-    background-size: auto 100vh !important;
+    background-size: auto 100% !important;
     background-repeat: no-repeat !important;
-    background-position: center;
+    background-position: center center;
     padding: 15px;
   }  
+  .backdrop{
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  .col-3{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .main-app{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 @media only screen and (min-width: 992px) { /* PC */
   body{
@@ -99,7 +124,8 @@ a:hover{
     padding: 15px;
   }
   .alt{
-    margin-right: 40px;
+    margin-right: 28px;
+    margin-top: 2px !important;
   }
 }
 @media only screen and (width: 1024px) { /* IPAD PRO */
