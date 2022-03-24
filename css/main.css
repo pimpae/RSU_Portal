@@ -63,7 +63,7 @@ body{
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%;   
+  width: 100%;  
 }
 .backdrop{ 
   margin-bottom: 20px;
@@ -71,8 +71,8 @@ body{
   background: #FFFFFF4D 0% 0% no-repeat padding-box;
   border-radius: 30px;
   opacity: 1;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   padding: 5px 15px 15px;
 }
 .alt{
@@ -113,6 +113,26 @@ body{
     padding-left: 5px;
     padding-right: 5px;
   }
+  .fix-bot{
+    position: relative !important;
+    bottom: unset !important;
+    left: unset !important;   
+    padding-left: 5px;
+    padding-right: 5px;
+  } 
+  
+  .fix-bot{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;  
+  }
+  .fix-bot .backdrop{  
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
 }
 @media only screen and (min-width: 992px) { /* PC */
   body{
@@ -126,6 +146,11 @@ body{
   .alt{
     margin-right: 28px;
     margin-top: 2px !important;
+  }
+  .fix-bot{ 
+    width: 98%;
+    transform: translate(-50%, -10%);
+    left: 50%;
   }
 }
 @media only screen and (width: 1024px) { /* IPAD PRO */
