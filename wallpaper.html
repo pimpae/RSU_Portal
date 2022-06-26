@@ -45,13 +45,13 @@
                         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false"> 
                             
                             <li class="nav-item">
-                                <a href="icon-list.html" class="nav-link active"> 
+                                <a href="icon-list.html" class="nav-link"> 
                                     <i class="nav-icon far fa-desktop-alt"></i>
                                     <p>จัดการไอคอน</p>
                                 </a> 
                             </li> 
                             <li class="nav-item">
-                                <a href="wallpaper.html" class="nav-link">
+                                <a href="wallpaper.html" class="nav-link active">
                                     <i class="nav-icon far fa-image"></i>
                                     <p>จัดการพื้นหลัง</p>
                                 </a> 
@@ -65,79 +65,42 @@
                     <div class="container-fluid">
                         <div class="row mb-2">
                             <div class="col-sm-6">
-                                <h1 class="m-0"><b> เพิ่มไอคอนระบบ </b></h1>
+                                <h1 class="m-0">
+                                    <b>จัดการพื้นหลัง</b> 
+                                </h1>
                             </div>  
                         </div> 
                     </div> 
                 </div>  
                 <section class="content">
                     <div class="container-fluid">
-                        <div class="div-box card-outline card-info p-4">
-                  
-                            <div class="col">
-                                <div class="row justify-content-center"> 
-                                    <div class="col-xl-10 col-12">
-                                        <form action=""> 
-                                            <div class="form-group row">
-                                                <div class="col-xl-2">
-                                                    <label for="">ชื่อระบบ</label> 
-                                                </div>  
-                                                <div class="col-xl-4"> 
-                                                    <input type="text" class="form-control"   >
-                                                </div> 
-                                            </div>  
-                                            <div class="form-group row">
-                                                <div class="col-xl-2">
-                                                    <label for="">Hyper Link</label> 
-                                                </div>  
-                                                <div class="col-xl-4"> 
-                                                    <input type="text" class="form-control"   >
-                                                </div> 
-                                            </div>   
-                                            <div class="form-group row">
-                                                <div class="col-xl-2">
-                                                    <label for="">ลำดับ</label> 
-                                                </div>  
-                                                <div class="col-xl-4"> 
-                                                    <select class="form-control form-control-md">
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                    </select>  
-                                                </div> 
-                                            </div>   
+                        <div class="col-xl-12">
+                            <div class="row">
+                                <div class="col-xl-6 div-box card-outline card-info p-4">
+                                    <form action=""> 
+                                        <div class="form-group">
+                                            <button type="button" class="btn btn-danger">
+                                                <i class="fas fa-file-upload"></i> อัพโหลดไฟล์
+                                            </button>
 
-                                            <div class="form-group row">
-                                                <div class="col-xl-2">
-                                                    <label for="">อัพโหลดไฟล์</label> 
-                                                </div>  
-                                                <div class="col-xl-10"> 
-                                                    <button class="btn btn-danger"><i class="far fa-file-upload"></i> อัพโหลดไฟล์</button>
-                                                    <img src="images/002@4x.png" class="img-fluid ml-5" width="60px">
-                                                </div>  
-                                            </div> 
-
-                                            <div class="col-12 p-0 mt-3"> 
-                                                <hr>
+                                            <br><br>
+                                            <div class="col-12 p-0">
+                                                <img src="images/RSU2015-04.webp" class="d-block img-fluid mx-auto" alt="">
                                             </div>
-                                            
-                                            <div class="form-group row">
-                                                <div class="col-xl-2 col-12"></div> 
-                                                <div class="col-xl-4 col-12"> 
-                                                    <a href="icon-list.html" class="btn btn-info pl-4 pr-4">บันทึก</a>
-                                                    <button type="button" class="btn btn-secondary"  >ยกเลิก</button>
-                                                </div>
-                                            </div>   
+                                        </div>  
+
+                                        <hr>
+
+                                        <div class="col-12 text-center">
+                                            <button type="button" class="btn btn-success">บันทึก</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">ยกเลิก</button>
+                                        </div>
 
 
-                                        </form>
-
-                                    </div>
+                                        
+                                    </form>
                                 </div>
                             </div>
- 
                         </div>
                     </div> 
                 </section> 
@@ -159,33 +122,31 @@
   
  
         <script src="js/adminlte.js"></script>   
- 
+        
+
+
+        <!-- TABLE -->
+        <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script> 
+        <script src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap4.min.js"></script> 
+        <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script> 
+        <script src="https://cdn.datatables.net/responsive/2.2.9/js/responsive.bootstrap4.min.js"></script> 
+        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.th.min.js"></script>
+ 
 
-        
-        <script> 
-            $('.input-daterange').datepicker({
-                format: 'dd-mm-yyyy',
-                clearBtn: true,
-                language: "th",
-                calendarWeeks: false,
-                autoclose: true,
-                todayHighlight: true,
-                toggleActive: true
-            });
-            
-            // $("form input:radio").change(function () {
-            //     if ($(this).val() == "radio1") { 
-            //         $(".amount").show();
-            //     } else {
-            //         $(".amount").hide();
-            //     }
-            // });
+        <script>
+            $(document).ready(function() {  
+                $('#tbx').dataTable({
+                    "bPaginate": true,
+                    "bLengthChange": false,
+                    "bFilter": false,
+                    "bInfo": true,
+                    "bAutoWidth": true 
+                });
+            } );
         </script>
-
-
 
     </body>
 </html>
